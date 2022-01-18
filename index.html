@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<form action="#">
+    <table>
+        <thead>
+            <caption>
+                Pizza Sipariş Formu
+            </caption>
+        </thead>
+        <tr>
+        <tr>
+            <td>
+                <label for="name">Ad Soyad <span style="color: yellow;">*</span></label>
+            </td>
+        </tr>
+        <td>
+            <input type="text" name="name" id="name" placeholder="yanıtınız" required>
+        </td>
+
+        <tr>
+            <tr>
+                <td>
+                    <label for="firma">Firma <span style="color: yellow;">*</span></label>
+                </td>
+            </tr>
+            
+            <td>
+                <select name="firma" id="firma" required>
+                    <option value="seciniz">Seçiniz</option>
+                    <option value="firma1">Dominos</option>
+                    <option value="firma2">Uno Pizza</option>
+                    <option value="firma3">Hot Pizza</option>
+                    <option value="firma4">Little Caesars</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="secim">Pizza Türü <span style="color: yellow;">*</span></label>
+            </td>
+
+        </tr>
+        <tr>
+            <td id="Pizza1">
+                <label for="pizza1"><img src="./img/pizza1.jpg" alt=""></label><br>
+                <input type="radio" name="pizza" id="pizza1"><span>Neapolitan</span>
+
+
+            </td>
+            <td id="Pizza2">
+                <label for="pizza2"><img src="./img/pizza2.jpg" alt=""></label><br>
+                <input type="radio" name="pizza" id="pizza2"><span>Karışık</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="Pizza3">
+                <label for="pizza3"><img src="./img/pizza3.jpg" alt=""></label><br>
+                <input type="radio" name="pizza" id="pizza3"><span>Vejetaryen</span>
+            </td>
+
+            <td id="Pizza4">
+                <label for="pizza4"><img src="./img/pizza4.jpg" alt=""></label><br>
+                <input type="radio" name="pizza" id="pizza4"><span>Margarita</span>
+            </td>
+        </tr>
+
+        <tfoot>
+            <td id="button">
+                <button type="submit">Sipariş Ver</button>
+            </td>
+        </tfoot>
+    </table>
+
+</form>
+</body>
+
+</html>
